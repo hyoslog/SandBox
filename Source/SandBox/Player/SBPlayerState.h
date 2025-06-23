@@ -22,5 +22,11 @@ UCLASS()
 class SANDBOX_API ASBPlayerState : public APlayerState
 {
 	GENERATED_BODY()
-	
+
+protected:
+	ASBPlayerState();
+
+protected:
+	UPROPERTY(VisibleAnywhere, Category = "Component")
+	class USBAbilitySystemComponent* AbilitySystemComponent;
 };
