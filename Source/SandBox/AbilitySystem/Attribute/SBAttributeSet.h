@@ -6,20 +6,20 @@
 #include "CoreMinimal.h"
 
 // Engine
-#include "AbilitySystemComponent.h"
+#include "AttributeSet.h"
 
 // Project
 
 // Third-party
 
 // Last
-#include "SBAbilitySystemComponent.generated.h"
+#include "SBAttributeSet.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class SANDBOX_API USBAbilitySystemComponent : public UAbilitySystemComponent
+class SANDBOX_API USBAttributeSet : public UAttributeSet
 {
 	GENERATED_BODY()
 	
