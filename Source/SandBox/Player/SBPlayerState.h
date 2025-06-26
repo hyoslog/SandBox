@@ -23,8 +23,16 @@ class SANDBOX_API ASBPlayerState : public APlayerState
 {
 	GENERATED_BODY()
 
-protected:
+public:
 	ASBPlayerState();
+
+public:
+	class USBAbilitySystemComponent* GetAbilitySystemComponent() const { return AbilitySystemComponent; }
+
+	/**
+	 * Attribute 디폴트 값 설정
+	 */
+	void SetAttributesToDefault();
 
 protected:
 	UPROPERTY(Transient)

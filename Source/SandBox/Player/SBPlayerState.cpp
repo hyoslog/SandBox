@@ -25,3 +25,11 @@ ASBPlayerState::ASBPlayerState()
 	HealthAttributeSet = CreateDefaultSubobject<USBHealthAttributeSet>(TEXT("HealthAttributeSet"));
 	check(HealthAttributeSet);
 }
+
+void ASBPlayerState::SetAttributesToDefault()
+{
+	if (IsValid(HealthAttributeSet))
+	{
+		HealthAttributeSet->SetHealth(HealthAttributeSet->GetMaxHealth());
+	}
+}
