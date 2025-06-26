@@ -27,6 +27,9 @@ protected:
 	ASBPlayerState();
 
 protected:
-	UPROPERTY(VisibleAnywhere, Category = "Component")
+	UPROPERTY(Transient)
 	class USBAbilitySystemComponent* AbilitySystemComponent;
+
+	UPROPERTY(Transient)
+	class USBHealthAttributeSet* HealthAttributeSet;
 };
